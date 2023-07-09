@@ -2,14 +2,14 @@
 
 nextflow.enable.dsl = 2
 //check some variables before execution
-params.help = false
-params.debug = false
-params.input= null
-params.outdir="results"
-params.enable_conda = null
+//params.help = false
+//params.debug = false
+//params.input= null
+//params.outdir="results"
+//params.enable_conda = null
 
 //this options are for MAG genomes
-params.roary = "-n -e -i 90 -cd 80"
+//params.roary = "-n -e -i 90 -cd 80"
 //see this paper
 //https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9677465/
 
@@ -20,8 +20,6 @@ def help_function() {
              |                [default: ${params.input}]
              |
              |Optional arguments:
-             |  --cpus   number of cpus
-             |                [default: ${params.cpus}]
              |  --outdir       The NextFlow result directory.
              |                [default: ${params.outdir}]
              |  --roary       The parameters for roary.
