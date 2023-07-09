@@ -22,6 +22,16 @@ nextflow run digenoma-lab/spg -r 1.0 --input test.csv -profile kutral
 ```
 The **-profile** "kutral" is specifically tailored for executing on the computing infrastructure of the Digenoma Lab. This configuration leverages containers, eliminating the need for manual software installation and configuration. By adopting containers, the workflow can seamlessly run with all the necessary dependencies encapsulated, ensuring reproducibility and ease of deployment. This profile streamlines the execution process and allows researchers in the Digenoma Lab to focus on their analysis without the overhead of managing software installations.
 
+## Pipeline parameters
+
+| Argument     | Description                                                               | Default Value               |
+|--------------|---------------------------------------------------------------------------|-----------------------------|
+| `--input`    | Location of the input file describing MAGs and their annotation from Prokka | null   |
+| `--outdir`   | The NextFlow result directory                                             | "results"  |
+| `--roary`    | The parameters for roary                                                   | "-n -e -i 90 -cd 80"   |
+| `--help`    | Display the help message                                                   |  false   |
+
+
 ## Command to prepare the input from a set of genomes
 
 ```
